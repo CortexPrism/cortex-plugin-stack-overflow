@@ -1,0 +1,21 @@
+{
+  "name": "cortex-plugin-stack-overflow",
+  "version": "1.0.0",
+  "description": "Stack Overflow / Knowledge Base Search — Search SO, GitHub Discussions, forums with answer quality evaluation",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-stack-overflow",
+  "homepage": "https://cortexprism.io/marketplace/plugins/stack-overflow",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "kb_search", "description": "Search knowledge bases for solutions", "params": [] },
+    { "name": "kb_evaluate", "description": "Evaluate answer quality and relevance", "params": [] },
+    { "name": "kb_adapt", "description": "Adapt code snippet to current codebase", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
